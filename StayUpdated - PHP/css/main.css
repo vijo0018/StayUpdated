@@ -1,0 +1,157 @@
+html{
+ /*   background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%); */
+    -webkit-font-smoothing: antialiased;
+}
+li:hover{
+    background-color: skyblue;
+}
+
+body{
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+/* navbar.php för den stora menyn. 
+Classer för den översiktliga menyn*/
+.menuText{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+	float:right;
+    color:rgb(255,255,255);
+
+}
+.menuText:hover{
+    color:rgb(0,0,0);
+    
+}
+
+/*  */
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3;
+}
+img 
+{
+    background: transparent;
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+a{
+    color:black;
+    
+}
+h2:hover, a:hover{
+    color:red;
+    text-decoration: none;
+
+}
+
+/* Lite egna redigeringar på bootstraps egna */
+.glyphicon{
+    color:rgb(255,255,255);
+}
+.glyphicon:hover{
+    color:red;
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: rgb(0, 0, 255);
+}
+.carousel-indicators li {
+    border-color: rgb(50, 50, 255);
+}
+.carousel-indicators li.active {
+    background-color: rgb(0, 153, 255);
+}
+.active{
+    color:red;
+}
+.carousel-inner img {
+    width: 100%; 
+    max-height: 400px;
+}
+
+.carousel-inner  {
+    background-color:white;
+}
+.carousel{
+	 margin: 0 auto;
+}
+
+.container {
+    width: 1040px;
+}
+
+.navbar{
+    background-color: rgb(0, 0, 255);
+    border:0;    
+}
+
+/* wnNavbar.php Menyn för World News. */
+.worldNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    clear:both;
+}
+.liWorld{
+    float:left;
+    padding-left:5px;
+    margin:10px;
+    margin-top:0px;
+
+}
+/*När man håller över*/
+.liWorld:hover{
+    border-left:6px solid red;
+    background-color:lightgrey;
+}
+
+/* Flyttar ner container lite */
+.containerDown{
+    margin-top:100px;
+}
+
+/*  movieNewsNavbar.php Menyn för movie news */
+.limovieNavbar{
+    border:1px solid black;
+    border-right: 0px solid;
+}
+.amovieNavbar{
+    color:rgb(255,255,255);
+}
+.amovieNavbar:hover{
+    color:rgb(0,0,0);
+}
+@media screen and (min-width:769px){
+ .navbar-nav    {
+     margin: auto;
+    }
+}
+@media screen and (min-width:769px){
+  .videoSize{
+    width:560px; 
+    height:315px;
+    border:none;
+}  
+}
+  .videoSize{
+    border:none;
+}
+
+@media screen and (max-width:769px){
+    .formAdjust{
+        width: 300px;
+    }
+}

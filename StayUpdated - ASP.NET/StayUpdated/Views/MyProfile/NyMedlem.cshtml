@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "NyMedlem";
+    Layout = "~/Views/Shared/Standardvy.cshtml";
+}
+
+<div class="container containerDown">
+
+    <!-- En formulär för att skapa ett konto  -->
+    <form action="" method="post" target="_self">
+
+        <div class="col-sm-10">
+             
+             Förnamn:<input class="form-control" name="fName" type="text" />
+        </div>
+
+        <div class="col-sm-10">
+            Efternamn:<input class="form-control" name="eNamn" type="text" />
+        </div>
+
+        <div class="col-sm-10">
+            Email:<input class="form-control" name="email" type="email" />
+        </div>
+
+        <div class="col-sm-10">
+            Password:<input class="form-control" name="pass" type="password" />
+        </div>
+
+        <div class="col-sm-10">
+            Confirm password:<input class="form-control" name="passConfirm" type="password" />
+        </div>
+
+        <div class="col-sm-10">
+            Personnummer:<input class="form-control" name="personNummer" type="text" />
+        </div>
+
+        <div class="col-sm-10">
+            Mobiltelefon:<input class="form-control" name="mobiltele" type="tel" />
+        </div>
+
+        <div class="col-sm-10">
+            <input class="btn btn-primary" name="submit" type="submit" value="Skapa användare" />
+        </div>
+
+    </form>
+</div>
+

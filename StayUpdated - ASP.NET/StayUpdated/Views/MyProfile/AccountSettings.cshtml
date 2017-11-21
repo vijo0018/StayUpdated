@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "AccountSettings";
+    Layout = "~/Views/Shared/Accountvy.cshtml";
+}
+
+<h2>AccountSettings</h2>
+<div class="container">
+    <div class="col-sm-6">
+        <form action="" method="post" target="_self">
+
+            <div class="col-sm-10">
+                Förnamn:<input class="form-control" name="fName" type="text" placeholder="" />
+            </div>
+            <div class="col-sm-10">
+                Efternamn:<input class="form-control" name="eNamn" type="text" placeholder="" />
+            </div>
+            <div class="col-sm-10">
+                Email:<input class="form-control" name="email" type="email" placeholder="" />
+            </div>
+            <div class="col-sm-10">
+                Password:<input class="form-control" name="pass" type="password" placeholder="" />
+            </div>
+
+            <div class="col-sm-10">
+                Confirm password:<input class="form-control" name="passConfirm" type="password" placeholder="" />
+            </div>
+
+            <div class="col-sm-10">
+                Personnummer:<input class="form-control" name="personNummer" type="text" placeholder="" />
+            </div>
+
+            <div class="col-sm-10">
+                Mobiltelefon:<input class="form-control" name="mobiltele" type="tel" placeholder="" />
+            </div>
+            <!-- Knapparna -->
+            <div class="col-sm-10"><br></div>
+            <div class="col-sm-10">
+                <input class="btn btn-primary" name="update" type="submit" value="Uppdatera" />
+                <input style="float:right;" class="btn btn-primary" name="delete" type="submit" value="Delete account" />
+            </div>
+        </form>
+    </div>
+</div>

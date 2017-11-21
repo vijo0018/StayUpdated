@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Bootstrap länk -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link href="~/Content/main.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Stay Updated</title>
+</head>
+<!-- Översiktliga menyn -->
+<body id="myPage" data-target=".navbar"
+      style="
+      margin:auto;
+      margin-top: 28px;
+      ">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <!-- Knappen för den minimerade menyn -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Företags "loggan" -->
+            <a class="navbar-brand" href="/Home" style="padding:0px;">
+                <h4 style="
+                    height 0px;
+                    margin-top: 12px;
+                    margin-bottom: 0px;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    color:white;">
+                    Stay Updated
+                </h4>
+            </a>
+        </div>
+        <div class="container">
+            <!-- Meny "navbar" har en collapse funktion ifall sidan kryper -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="/WorldNews">
+                            <span class="glyphicon glyphicon-globe">
+                                <div class="menuText">&nbsp;World News</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/MovieNews">
+                            <span class="glyphicon glyphicon-film"><div class="menuText">&nbsp;Movie News</div> </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/GameNews">
+                            <span class="glyphicon glyphicon-headphones"><div class="menuText">&nbsp;Game News</div></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/MusicNews">
+                            <span class="glyphicon glyphicon-music"><div class="menuText">&nbsp;Music News</div></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ViralVideos">
+                            <span class="glyphicon glyphicon-play"><div class="menuText">&nbsp;Viral Videos</div></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/MyProfile">
+                            <span class="glyphicon glyphicon-user"><div class="menuText">&nbsp;My Profile</div></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar för Movie News -->
+    <br />
+    <div class="navbar" style="width:421px;">
+        <ul class="nav navbar-nav"  style="margin: 0 auto;">
+            <li class="limovieNavbar">
+                <a class="amovieNavbar" href="/MovieNews/Index">
+                    NEWS
+                </a>
+            </li>
+            <li class="limovieNavbar">
+                <a class="amovieNavbar" href="/MovieNews/Trailers">
+                    TRAILERS
+                </a>
+            </li>
+            <li class="limovieNavbar">
+                <a class="amovieNavbar" href="/MovieNews/Reviews">
+                    REVIEWS
+                </a>
+            </li>
+            <li class="limovieNavbar">
+                <a class="amovieNavbar" href="/MovieNews/Upcoming">
+                    UPCOMING
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div>@RenderBody()</div>
+
+    <!-- Slutet av sidorna -->
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Website Made By <a href="http://www.vidaraj.se/" title="Visit My Page">VidarAJ.se</a></p>
+    </footer>
+
+    <!-- jquery taget från w3schools bootstrap exempel och gör så att knappen i footern scrollar fint upp till början. -->
+    <script>
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+      });
+    } // End if
+  });
+})
+    </script>
+
+</body>
+</html>
